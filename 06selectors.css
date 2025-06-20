@@ -1,0 +1,39 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif; /* applies ariel font to all elements, sans-serif if applied if ariel is not available */
+    }
+
+    /* Type selector */
+    h1 {
+      background-color: navy;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    /* Class selector */
+    .note {
+      background-color: #fdf6e3;
+      color: #333;
+      padding: 10px;
+      border-left: 4px solid orange;
+      margin: 20px;
+    }
+
+    /* ID selector */
+    #highlight {
+      color: red;
+      font-weight: bold;
+      font-size: 22px;
+      margin-left: 20px;
+    }
+
+    /* Grouping selector */
+    h2, .grouped, #special {
+      background-color: lightblue;
+      padding: 10px;
+      margin: 15px;
+      border-radius: 8px;
+    }

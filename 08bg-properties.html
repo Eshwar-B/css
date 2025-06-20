@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Background Properties</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    .bg-box {
+      width: 90%;
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 30px;
+      color: white;
+      font-size: 18px;
+      border: 8px dashed #fff;
+      border-radius: 15px;
+
+      background-color: #2c3e50; /* fallback color */
+      background-image: url('https://www.transparenttextures.com/patterns/stardust.png'), linear-gradient(to right, #3498db, #9b59b6);
+      background-repeat: repeat;             /* can be no-repeat, repeat-x, repeat-y, repeat */
+      background-position: center ;    /* position image */
+      background-size: cover;                /* contain, cover, auto, % */
+      background-attachment: fixed;          /* scroll, fixed, local */
+      background-clip: padding-box;          /* border-box, content-box, padding-box */
+      background-origin: border-box;         /* border-box, padding-box, content-box */
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="bg-box">
+    <h2>CSS Background Properties</h2>
+    <p>This box demonstrates all the important background properties in CSS, including background color, images, repeat, position, size, attachment, clip, origin, and layering.</p>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Box Model</title>
+  <style>
+    body {
+      background-color: #ecf0f1;
+      font-family: Arial, sans-serif;
+      padding: 50px;
+    }
+
+    .box-model {
+      width: 300px;
+      height: 150px;
+
+      margin: 40px auto;               /* outer space */
+      padding: 20px;                   /* space inside border */
+
+      border: 5px solid #2c3e50;       /* border around padding */
+      outline: 3px dashed #e74c3c;     /* extra visual boundary outside border */
+      
+      box-sizing: border-box;          /* includes border & padding in width/height */
+      
+      background-color: #3498db;       /* content background */
+      color: white;
+      text-align: center;
+      line-height: 110px;
+      font-size: 18px;
+      border-radius: 10px;
+    }
+
+    .label {
+      text-align: center;
+      margin-top: -30px;
+      font-weight: bold;
+      color: #2c3e50;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="label">Box Model Visualization</div>
+  <div class="box-model">
+    Content Area (300px x 150px)
+  </div>
+
+</body>
+</html>
