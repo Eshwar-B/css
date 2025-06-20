@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Grid Breakpoints & Alignment</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .box {
+      background-color: #3498db;
+      color: white;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body class="bg-light">
+
+  <div class="container py-4">
+    <h2 class="text-center mb-4">Bootstrap Grid Breakpoints & Alignment</h2>
+
+    <!-- Row with responsive column breakpoints -->
+    <div class="row">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+        <div class="box">col-12 → col-sm-6 → col-md-4 → col-lg-3</div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+        <div class="box">Responsive Grid</div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+        <div class="box">Auto Resize</div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+        <div class="box">Stack on Small</div>
+      </div>
+    </div>
+
+    <!-- Row with horizontal alignment -->
+    <div class="row justify-content-between mt-5">
+      <div class="col-4 box">Start</div>
+      <div class="col-4 box text-center">Center</div>
+      <div class="col-4 box text-end">End</div>
+    </div>
+
+    <!-- Row with vertical alignment -->
+    <div class="row align-items-center mt-5" style="height: 150px;">
+      <div class="col box align-self-start">Top</div>
+      <div class="col box align-self-center">Center</div>
+      <div class="col box align-self-end">Bottom</div>
+    </div>
+
+    <!-- Row with mixed horizontal & vertical alignment -->
+    <div class="row d-flex justify-content-center align-items-center mt-5" style="height: 200px;">
+      <div class="col-6 box">Perfectly Centered</div>
+    </div>
+  </div>
+
+</body>
+</html>

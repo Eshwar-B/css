@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Formatting Classes</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light p-4">
+
+  <div class="container">
+
+    <!-- TYPOGRAPHY -->
+    <h2 class="mb-4">Typography Classes</h2>
+
+    <p class="h1">.h1 Heading</p>
+    <p class="h3 text-primary">.h3 Text Primary</p>
+    <p class="lead text-center text-success">This is a lead paragraph, centered & green.</p>
+    <p class="text-muted">This is muted text.</p>
+    <p class="fw-bold fst-italic text-end">Bold, Italic and Right Aligned Text</p>
+
+    <hr class="my-5">
+
+    <!-- IMAGES -->
+    <h2 class="mb-4">Image Classes</h2>
+
+    <div class="d-flex flex-wrap gap-3">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=facearea&w=150&h=150" class="img-fluid" alt="Responsive image">
+      <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=facearea&w=150&h=150" class="rounded" alt="Rounded image">
+      <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=facearea&w=150&h=150" class="img-thumbnail" alt="Thumbnail image">
+      <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=facearea&w=150&h=150" class="rounded-circle" alt="Circular image">
+    </div>
+
+    <hr class="my-5">
+
+    <!--  TABLES -->
+    <h2 class="mb-4">Table Classes</h2>
+
+    <div class="table-responsive">
+      <table class="table table-striped table-bordered table-hover align-middle text-center">
+        <thead class="table-dark">
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Status</th>
+            <th>Role</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Ravi</td>
+            <td class="text-success fw-semibold">Active</td>
+            <td>User</td>
+          </tr>
+          <tr class="table-primary">
+            <td>2</td>
+            <td>Sana</td>
+            <td class="text-danger">Inactive</td>
+            <td>Admin</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Ayesha</td>
+            <td class="text-warning">Pending</td>
+            <td>Editor</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+</body>
+</html>
